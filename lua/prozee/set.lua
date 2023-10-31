@@ -10,14 +10,15 @@ vim.opt.expandtab = true;
 vim.opt.smartindent = true;
 
 -- linewrap for code over horizontal limit
-vim.opt.wrap = true;
+vim.opt.wrap = false;
 
 vim.opt.swapfile = false;
 vim.opt.backup  = false;
 vim.opt.undodir= os.getenv("HOME") .. "/.vim/undodir";
 vim.opt.undofile = true;
 
-vim.opt.hlsearch = false
+-- search stuff
+vim.opt.hlsearch = true;
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
@@ -25,5 +26,11 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8;
 vim.opt.signcolumn = "yes";
 
+vim.opt.background = "dark";
 -- vim.opt.colorcolumn = "80";
 
+-- split windows
+vim.opt.splitright = true;
+vim.opt.splitbelow = true;
+
+vim.opt.iskeyword:append("-");
